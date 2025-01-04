@@ -4,7 +4,7 @@ import * as motion from "framer-motion/client";
 const Navbar = () => {
     return (
         <motion.nav
-            className="sticky top-0 flex items-center justify-between bg-inherit px-20 py-7"
+            className="sticky top-0 flex items-center justify-between bg-inherit px-10 py-7"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -16,7 +16,7 @@ const Navbar = () => {
             }}
         >
             <Link
-                href={""}
+                href={"#top"}
                 className="bg-gradient-to-tr from-blue-500 from-30% to-blue-600 to-100% bg-clip-text text-2xl font-semibold text-transparent"
             >
                 100xDevs
