@@ -1,6 +1,6 @@
 export const Github = (
     <svg
-        className="w-5 cursor-pointer fill-neutral-400 hover:fill-blue-500"
+        className="w-6 cursor-pointer fill-neutral-400 hover:fill-blue-500"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
