@@ -8,7 +8,7 @@ import {
 
 export const FAQs = () => {
     return (
-        <section id="faqs" className="px-6 py-20 sm:px-16 md:px-32">
+        <section id="faqs" className="scroll-mt-6 px-6 py-20 sm:px-16 md:px-32">
             <p className="pb-6 text-center text-4xl font-semibold">FAQs</p>
 
             <Accordion type="single" collapsible className="w-full">
