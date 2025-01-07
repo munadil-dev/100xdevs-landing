@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <>
             <motion.nav
-                className="sticky top-0 flex items-center justify-between border-b bg-inherit px-6 py-7 sm:px-10"
+                className="sticky top-0 z-50 flex items-center justify-between border-b bg-inherit px-6 py-7 sm:px-10"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
