@@ -2,11 +2,21 @@ import Link from "next/link";
 import { Tweet } from "react-tweet";
 import Marquee from "../ui/marquee";
 import { tweetIds } from "@/constants/tweets";
+import * as motion from "framer-motion/client";
 
 export const SuccessStories = () => {
     return (
         <>
-            <section
+            <motion.section
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    type: "spring",
+                    damping: 10,
+                    stiffness: 100,
+                    delay: 1,
+                    duration: 0.2,
+                }}
                 id="success-stories"
                 className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg pt-32 md:shadow-xl"
             >
@@ -24,9 +34,20 @@ export const SuccessStories = () => {
 
                 <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
-            </section>
+            </motion.section>
 
-            <p className="text-center font-medium sm:text-lg">
+            <motion.p
+                className="text-center font-medium sm:text-lg"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    type: "spring",
+                    damping: 10,
+                    stiffness: 100,
+                    delay: 1,
+                    duration: 0.2,
+                }}
+            >
                 And more. Check out the{" "}
                 <Link
                     href={"https://www.youtube.com/@100xdevs-k"}
@@ -38,7 +59,7 @@ export const SuccessStories = () => {
                         !
                     </span>
                 </Link>
-            </p>
+            </motion.p>
         </>
     );
 };

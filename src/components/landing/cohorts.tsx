@@ -1,9 +1,22 @@
 import Link from "next/link";
 import ShineBorder from "../ui/shine-border";
+import * as motion from "framer-motion/client";
 
 export const Cohorts = () => {
     return (
-        <section id="cohorts" className="px-6 pt-36 sm:px-16 md:px-36">
+        <motion.section
+            id="cohorts"
+            className="px-6 pt-36 sm:px-16 md:px-36"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                type: "spring",
+                damping: 10,
+                stiffness: 100,
+                delay: 1,
+                duration: 0.2,
+            }}
+        >
             <p className="pb-6 text-center text-4xl font-semibold">Cohorts</p>
 
             <div className="grid grid-cols-1 justify-between gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -140,6 +153,6 @@ export const Cohorts = () => {
                     here
                 </Link>
             </p>
-        </section>
+        </motion.section>
     );
 };
