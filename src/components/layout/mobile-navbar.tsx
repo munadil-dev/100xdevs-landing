@@ -32,11 +32,11 @@ export const MobileNavbar = ({ isMenuOpen, setIsMenuOpen }: IMobileNavbar) => {
             </Link>
 
             <Link
-                href={"#testimonials"}
+                href={"#success-stories"}
                 className="hover:text-blue-500"
                 onClick={() => setIsMenuOpen(false)}
             >
-                Testimonials
+                Success Stories
             </Link>
 
             <Link

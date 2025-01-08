@@ -30,16 +30,16 @@ const Navbar = () => {
                     100xDevs
                 </Link>
 
-                <div className="hidden items-center gap-6 text-lg font-medium sm:flex">
+                <div className="hidden items-center gap-6 text-lg font-medium tracking-tighter sm:flex">
                     <Link href={"#course"} className="hover:text-blue-500">
                         Course
                     </Link>
 
                     <Link
-                        href={"#testimonials"}
+                        href={"#success-stories"}
                         className="hover:text-blue-500"
                     >
-                        Testimonials
+                        Success Stories
                     </Link>
 
                     <Link href={"#faqs"} className="hover:text-blue-500">
