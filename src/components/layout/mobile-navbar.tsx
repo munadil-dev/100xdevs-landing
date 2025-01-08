@@ -24,11 +24,11 @@ export const MobileNavbar = ({ isMenuOpen, setIsMenuOpen }: IMobileNavbar) => {
     return (
         <div className="fixed left-0 top-14 z-50 flex h-screen w-screen flex-col gap-7 bg-inherit pl-6 pt-12 text-2xl font-semibold sm:hidden">
             <Link
-                href={"#course"}
+                href={"#cohorts"}
                 className="hover:text-blue-500"
                 onClick={() => setIsMenuOpen(false)}
             >
-                Course
+                Cohorts
             </Link>
 
             <Link

@@ -31,8 +31,8 @@ const Navbar = () => {
                 </Link>
 
                 <div className="hidden items-center gap-6 text-lg font-medium tracking-tighter sm:flex">
-                    <Link href={"#course"} className="hover:text-blue-500">
-                        Course
+                    <Link href={"#cohorts"} className="hover:text-blue-500">
+                        Cohorts
                     </Link>
 
                     <Link
