@@ -52,7 +52,7 @@ export const SuccessStories = () => {
             >
                 And more. Check out the{" "}
                 <Link
-                    href={"https://www.youtube.com/@100xdevs-k"}
+                    href={"https://www.youtube.com/@100xDevsYT"}
                     target="_blank"
                     className="text-xl font-semibold underline decoration-blue-500 decoration-[3px] underline-offset-2"
                 >
