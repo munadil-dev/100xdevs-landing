@@ -5,7 +5,7 @@ import { resourceLinks } from "@/constants/footer/resources";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col flex-wrap items-start justify-between gap-14 border-t px-6 py-6 sm:px-16 md:flex-row md:flex-nowrap md:px-32">
+        <footer className="container mx-auto flex flex-col flex-wrap items-start justify-between gap-14 px-6 py-6 sm:px-10 md:flex-row md:flex-nowrap">
             <div className="flex flex-[4] flex-col gap-5">
                 <div className="flex items-center gap-3 text-2xl font-semibold">
                     <img

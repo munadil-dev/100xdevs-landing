@@ -3,7 +3,7 @@ import * as motion from "framer-motion/client";
 
 export const Contribute = () => {
     return (
-        <section className="px-6 pb-4 pt-20 sm:px-16 md:px-32">
+        <section className="container mx-auto px-6 pb-4 pt-20 sm:px-10">
             <motion.p
                 className="pb-6 text-center text-4xl font-semibold"
                 initial={{ opacity: 0, y: -20 }}
@@ -20,7 +20,7 @@ export const Contribute = () => {
             </motion.p>
 
             <motion.div
-                className="flex flex-col items-center justify-around gap-8 rounded-t-3xl rounded-bl-3xl rounded-br-lg bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 px-5 py-6 sm:flex-row"
+                className="flex flex-col items-center justify-between gap-8 rounded-t-3xl rounded-bl-3xl rounded-br-lg bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 p-10 sm:flex-row"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -32,11 +32,11 @@ export const Contribute = () => {
                 }}
             >
                 <div className="flex flex-col gap-2">
-                    <p className="text-center text-4xl font-semibold sm:text-start sm:text-5xl">
+                    <p className="text-center text-3xl font-semibold sm:text-start sm:text-4xl lg:text-5xl">
                         Want Bounties?
                     </p>
 
-                    <p className="text-balance text-center font-medium sm:text-start sm:text-lg">
+                    <p className="text-balance text-center text-sm font-medium sm:text-start sm:text-lg">
                         Contribute to{" "}
                         <Link
                             href={"https://github.com/code100x"}
@@ -52,7 +52,7 @@ export const Contribute = () => {
                 <img
                     src="/bounty.jpeg"
                     alt="Harkirat giving laptop as bounty"
-                    className="h-40 w-64 rounded-t-2xl rounded-bl-2xl rounded-br-lg"
+                    className="aspect-video w-72 rounded-t-2xl rounded-bl-2xl rounded-br-lg sm:w-64 lg:w-96"
                 />
             </motion.div>
         </section>

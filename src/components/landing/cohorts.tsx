@@ -6,7 +6,7 @@ export const Cohorts = () => {
     return (
         <motion.section
             id="cohorts"
-            className="px-6 pt-36 sm:px-16 md:px-36"
+            className="container mx-auto px-6 pt-36 sm:px-10"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -118,7 +118,7 @@ export const Cohorts = () => {
                         />
 
                         <ul className="flex flex-col gap-1 font-medium">
-                            <li>Everthing from Cohort 1 and 2</li>
+                            <li>Everything from Cohort 1 and 2</li>
                             <li className="text-lg font-semibold underline underline-offset-2">
                                 Web 3
                             </li>

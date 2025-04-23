@@ -20,13 +20,13 @@ export const SuccessStories = () => {
                     duration: 0.2,
                 }}
                 id="success-stories"
-                className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg pt-32 md:shadow-xl"
+                className="container relative mx-auto flex w-full flex-col items-center justify-center overflow-hidden rounded-lg px-6 pt-32 sm:px-10 md:shadow-xl"
             >
                 <p className="pb-6 text-center text-4xl font-semibold">
                     Success stories
                 </p>
 
-                <Marquee className="[--duration:30s]">
+                <Marquee className="[--duration:40s]">
                     {tweetIds.map((id, index) => (
                         <div key={index} className="h-fit w-64 sm:w-80">
                             <TwitterTweetEmbed tweetId={id} />

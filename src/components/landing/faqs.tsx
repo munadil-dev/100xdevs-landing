@@ -11,7 +11,7 @@ export const FAQs = () => {
     return (
         <motion.section
             id="faqs"
-            className="scroll-mt-6 px-6 py-20 sm:px-16 md:px-32"
+            className="container mx-auto scroll-mt-6 px-6 py-20 sm:px-10"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
