@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import Marquee from "../ui/marquee";
+import { Tweet } from "react-tweet";
 import { tweetIds } from "@/constants/tweets";
 import * as motion from "framer-motion/client";
-import { TwitterTweetEmbed } from "react-twitter-embed";
 
 export const SuccessStories = () => {
     return (
@@ -29,7 +29,7 @@ export const SuccessStories = () => {
                 <Marquee className="[--duration:40s]">
                     {tweetIds.map((id, index) => (
                         <div key={index} className="h-fit w-64 sm:w-80">
-                            <TwitterTweetEmbed tweetId={id} />
+                            <Tweet id={id} />
                         </div>
                     ))}
                 </Marquee>
